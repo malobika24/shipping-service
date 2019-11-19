@@ -1,11 +1,16 @@
 {
-  "name": "shipping-service",
+  "name": "shipping-service-01",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+        "test": "jest tests",
+        "start": "node src/app.js"
+    },
+    "engines": {
+        "node": "8.11.3",
+        "npm": "5.6.x"
+    },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/malobika24/shipping-service.git"
@@ -22,10 +27,10 @@
   "homepage": "https://github.com/malobika24/shipping-service#readme",
   "dependencies": {
     "axios": "^0.19.0",
-    "express": "^4.17.1",
-    "sinon": "^7.5.0"
+    "express": "^4.17.1"
   },
   "devDependencies": {
-    "nock": "^11.7.0"
+    "nock": "^11.7.0",
+    "sinon": "^7.5.0"
   }
 }
